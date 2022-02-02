@@ -1,0 +1,135 @@
+.card{
+
+    width: 47rem;
+    height: 50rem;
+    background-color: white;
+    border-radius: 22px;
+    
+    @include center-Content;
+    z-index: $card;
+    background-image: url('../../images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: 47rem 18.6rem;
+    box-shadow: slategrey 2rem 2rem 20rem;
+    @include respond(phone){
+        width: 40rem;
+        height: 46rem;
+        background-size: 40rem 17rem;
+    }
+    &__profile{
+        width: 14.4rem;
+        height: 14.4rem;
+        background-color: white;
+        border-radius: 50%;
+        @include center-Content;
+        top:38%;
+        &__img{
+            height: 13rem;
+            width: auto;
+            border-radius: 50%;
+            @include center-Content;
+        }
+    }
+    &__name{
+        @include bold-Content;
+        text-align: center;
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+    }
+    &__age{
+        font-size: 2.2rem;
+        line-height: 3rem;
+        font-weight: normal;
+        color: $color-tertiary;
+        padding-left: 1rem;
+    }
+    &__location{
+        font-size: 1.7rem;
+        line-height: 3rem;
+        font-weight: normal;
+        color: $color-tertiary;
+        position: absolute;
+        top:68%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    &__seperator{
+        height:.3px;
+        width: inherit;
+        background-color: $color-tertiary;
+        position: absolute;
+        
+        top:75%;
+        left:0;
+
+    }
+    &__stats{
+        width:36rem;
+        height: 10em;
+        
+        position: absolute;
+        top:88%;
+        left:50%;
+        
+        transform: translate(-50%,-50%);
+        &__count{
+            @include bold-Content;
+            margin-bottom: 1rem;
+        }
+        &__desc{
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+            font-weight: normal;
+            color: $color-tertiary;
+            letter-spacing: 4px;
+            
+        }
+        &--1{
+            width:12rem;
+            height: inherit;
+            
+            text-align: center;
+            margin-top: 2rem;
+            float: left;
+        }
+        &--2{
+            width:12rem;
+            height: inherit;
+            
+            text-align: center;
+            margin-top: 2rem;
+            float: left;
+        }
+        &--3{
+            width:12rem;
+            height: inherit;
+            float: left;
+            
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+    }
+}
+.card-layout{
+
+
+    width: 47rem;
+    height: 50rem;
+    background-color: transparent;
+    border-radius: 22px;
+    @include respond(phone){
+        width: 40rem;
+        height: 46rem;
+    }
+    
+    @include center-Content;
+    
+        
+        // background-repeat: no-repeat;
+        // background-size: 47rem 18.6rem;
+        // box-shadow: slategrey 2rem 2rem 20rem;
+}

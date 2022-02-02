@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    // @include respond(tab-land){
+    //     font-size: 60%;
+    // }
+    // @include respond(tab-port){
+    //     font-size: 50%;
+    // }
+    // @include respond(big-desktop){
+    //     font-size: 70%;
+    // }
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.section-hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.attribution{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+.circle--top-left{
+    z-index: $svg;
+    position: absolute;
+
+    // width: 100rem;
+    // height: 100rem;
+    transform: translate(-70%,-75%);// top:-100%;
+
+    // left:-17%;
+    
+}
+.circle--bottom-right{
+    z-index: $svg;
+    position: absolute;
+    // width: 100rem;
+    // height: 100rem;
+    
+    transform: translate(25%,20%);// top:-100%;
+    
+}
