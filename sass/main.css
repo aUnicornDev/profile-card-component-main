@@ -52,7 +52,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
-  background-image: url("../../images/bg-pattern-card.svg");
+  background-image: url("../images/bg-pattern-card.svg");
   background-repeat: no-repeat;
   background-size: 47rem 18.6rem;
   -webkit-box-shadow: slategrey 2rem 2rem 20rem;
